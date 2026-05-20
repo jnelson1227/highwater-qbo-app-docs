@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Privacy Policy &mdash; Highwater QBO App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; color: #1f2937; line-height: 1.55; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.05rem; margin-top: 1.75rem; }
+  .meta { color: #6b7280; font-size: 0.9rem; margin-top: 0; }
+  a { color: #1d4ed8; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.25rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: May 20, 2026</p>
+
+  <p>The Highwater QBO App (the &ldquo;Software&rdquo;) is an internal automation tool operated by Highwater Cafe &amp; Market (&ldquo;Operator&rdquo;). This Privacy Policy describes what data the Software accesses and how it handles that data.</p>
+
+  <h2>1. Scope</h2>
+  <p>The Software is used solely by the Operator to access the Operator's own QuickBooks Online (&ldquo;QBO&rdquo;) accounts. The Software is not offered to, marketed to, or available to any other party. It does not collect data from end users other than the Operator.</p>
+
+  <h2>2. Data the Software Accesses</h2>
+  <ul>
+    <li>OAuth credentials (client ID, client secret, refresh token, realm ID) issued by Intuit, required to call the QBO API.</li>
+    <li>QBO data retrieved during normal operation, such as chart of accounts, journal entries, invoices, and financial reports.</li>
+    <li>Local input files supplied by the Operator (e.g., POS reports, payroll exports) used to construct journal entries.</li>
+  </ul>
+
+  <h2>3. Where Data Is Stored</h2>
+  <ul>
+    <li>OAuth credentials are stored locally in an environment file on the Operator's own computer. They are not transmitted to any third party other than Intuit, and only when calling the QBO API.</li>
+    <li>QBO data retrieved from the API is held in memory for the duration of a session and is not persisted by the Software.</li>
+    <li>Input files remain on the Operator's own filesystem.</li>
+  </ul>
+
+  <h2>4. Sharing</h2>
+  <p>The Software does not share data with any third party. It communicates only with Intuit's QBO API. The Operator does not sell, rent, or disclose data accessed via the Software.</p>
+
+  <h2>5. Security</h2>
+  <p>OAuth credentials are stored in a local file readable only by the Operator's user account on the Operator's computer. The Software does not transmit data over the network except to Intuit's API endpoints, which use HTTPS.</p>
+
+  <h2>6. Retention</h2>
+  <p>The Software retains no QBO data beyond a single session. OAuth credentials are retained for as long as the Operator wishes to continue using the Software and may be revoked at any time from the Operator's QBO &ldquo;Apps&rdquo; settings.</p>
+
+  <h2>7. Children</h2>
+  <p>The Software is not directed to children. It accesses only the Operator's own business records.</p>
+
+  <h2>8. Changes</h2>
+  <p>This Privacy Policy may be updated from time to time. The &ldquo;Last updated&rdquo; date at the top of this page indicates the most recent revision.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this Privacy Policy may be directed to <a href="mailto:jill@highwater.cafe">jill@highwater.cafe</a>.</p>
+
+  <footer>
+    Operated by Highwater Cafe &amp; Market &middot; <a href="index.html">Home</a>
+  </footer>
+</body>
+</html>

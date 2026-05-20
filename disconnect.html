@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Disconnect &mdash; Highwater QBO App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; color: #1f2937; line-height: 1.55; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: #6b7280; font-size: 0.9rem; margin-top: 0; }
+  a { color: #1d4ed8; }
+  ol { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>Disconnecting the Highwater QBO App</h1>
+  <p class="meta">Last updated: May 20, 2026</p>
+
+  <p>The Highwater QBO App is an internal, single-operator automation tool. It runs locally on the Operator's own computer and holds an OAuth refresh token for each connected QuickBooks Online company.</p>
+
+  <p>To disconnect the app from a QuickBooks Online company:</p>
+
+  <ol>
+    <li>Sign in to <a href="https://qbo.intuit.com/">qbo.intuit.com</a> with the QBO login for that company.</li>
+    <li>Open <strong>Settings</strong> (gear icon) &rarr; <strong>Manage users</strong> &rarr; <strong>Apps</strong>, or browse to <code>https://app.qbo.intuit.com/app/managemyapps</code>.</li>
+    <li>Locate the &ldquo;Kismet&rdquo; app in the list of connected apps.</li>
+    <li>Click <strong>Disconnect</strong>. The refresh token held by the local app will immediately become invalid.</li>
+    <li>On the Operator's computer, remove the corresponding refresh token from the local environment file.</li>
+  </ol>
+
+  <p>After disconnection, the app can no longer call the QuickBooks Online API for that company until it is re-connected through the OAuth flow described on the <a href="connect.html">Connect</a> page.</p>
+
+  <footer>
+    Operated by Highwater Cafe &amp; Market &middot; Contact: <a href="mailto:jill@highwater.cafe">jill@highwater.cafe</a> &middot; <a href="index.html">Home</a>
+  </footer>
+</body>
+</html>

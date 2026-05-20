@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Connect &mdash; Highwater QBO App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; color: #1f2937; line-height: 1.55; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: #6b7280; font-size: 0.9rem; margin-top: 0; }
+  a { color: #1d4ed8; }
+  ol { padding-left: 1.25rem; }
+  li { margin: 0.4rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>Connecting the Highwater QBO App</h1>
+  <p class="meta">Last updated: May 20, 2026</p>
+
+  <p>The Highwater QBO App is an internal, single-operator automation tool. It runs locally on the Operator's own computer and authenticates to QuickBooks Online using a one-time OAuth flow performed by the Operator.</p>
+
+  <p>To connect (or re-connect) the app to a QuickBooks Online company:</p>
+
+  <ol>
+    <li>Sign in to the Intuit Developer Portal at <a href="https://developer.intuit.com/">developer.intuit.com</a> using the Operator's developer account.</li>
+    <li>Open the OAuth 2.0 Playground from the developer portal.</li>
+    <li>Select the &ldquo;Kismet&rdquo; app and the <code>com.intuit.quickbooks.accounting</code> scope.</li>
+    <li>Click &ldquo;Get authorization code&rdquo; and, in the Connect to QuickBooks popup, sign in with the QBO login that has access to the desired company. Approve the connection.</li>
+    <li>Click &ldquo;Get tokens&rdquo; to exchange the authorization code for a refresh token.</li>
+    <li>Update the local environment file on the Operator's computer with the new refresh token and realm ID.</li>
+  </ol>
+
+  <p>Because this is an internal-use application, no public sign-in or connection endpoint is exposed. All authorization is performed by the Operator through Intuit's own developer tools.</p>
+
+  <footer>
+    Operated by Highwater Cafe &amp; Market &middot; Contact: <a href="mailto:jill@highwater.cafe">jill@highwater.cafe</a> &middot; <a href="index.html">Home</a>
+  </footer>
+</body>
+</html>
